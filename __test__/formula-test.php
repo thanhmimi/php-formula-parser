@@ -21,7 +21,7 @@ $r = new TestRunner;
  * Basic test
  */
 $formula = "TOTAL_VOID - TOTAL_DISCOUNT";
-$expected  = $totalVoid - $totalDiscount;
+$expected  = 0;
 
 $fp = new FormulaParser($formula, ["GST"]);
 foreach($fp->variables() as $variable){
